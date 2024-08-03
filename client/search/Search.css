@@ -1,0 +1,192 @@
+@font-face {
+    font-family: Sansita;
+    src: url(C:\Users\User\Desktop\CS400\client\src\demoLogin\fonts\Sansita\Sansita-Regular.ttf);
+  }
+  
+@font-face {
+  font-family: Lato;
+  src: url(C:\Users\User\Desktop\CS400\client\src\demoLogin\fonts\Lato\Lato-Regular.ttf);
+}
+@font-face {
+  font-family: LatoB;
+  src: url(C:\Users\User\Desktop\CS400\client\src\demoLogin\fonts\Lato\Lato-Bold.ttf);
+}
+@font-face {
+  font-family: LatoI;
+  src: url(C:\Users\User\Desktop\CS400\client\src\demoLogin\fonts\Lato\Lato-Italic.ttf);
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    overflow: hidden
+}
+
+.searchBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-bottom: -130px;
+}
+
+.searchBody ul {
+    list-style: none;
+}
+
+.searchBody li.outer {
+    text-align: center;
+}
+
+.searchBody li a {
+    font-family: Lato;
+}
+
+.searchBody li.outer:nth-child(1) {
+    font-family: LatoB;
+    font-size: 56px;
+    color: #618264;
+    margin-bottom: 20px;
+}
+
+.searchBody li.outer:nth-child(1) a {
+    letter-spacing: 100px;
+}
+
+.searchBody li.outer:nth-child(2) {
+    font-family: LatoI;
+    font-size: 20px;
+    color: #618264;
+    margin-bottom: 50px;
+}
+
+.searchBar {
+    margin-bottom: 20px;
+}
+
+.searchBar ul {
+    display: flex;
+}
+
+.searchBar li.bar {
+    font-family: Lato;
+    color: white;
+    margin-right: 10px;
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+.searchBar li.filter {
+    text-align: left;
+    margin-right: 10px;
+    background-color: #79AC78;
+    padding: 5px 20px;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.searchBar li.filter a {
+    font-family: Lato;
+    color: white;
+}
+
+.searchBar li.go {
+    text-align: center;
+    background-color: #B0D9B1;
+    margin-right: 40px;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.searchBar li.go a {
+    font-family: Lato;
+    color: #618264;
+}
+
+.golink{
+    text-decoration: none;
+    font-family: LatoB;
+    font-size: 18px;
+    color: #618264;
+}
+
+.auto {
+    margin-bottom: 30px;
+}
+
+.auto li.auto-item {
+    color: #618264;
+}
+
+.check-auto {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .check-auto input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark-auto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #618264;
+    border-radius: 5px;
+  }
+
+.check-auto:hover input ~ .checkmark-auto{
+    background-color: #B0D9B1;
+}
+
+.check-auto input:checked ~ .checkmark-auto {
+    background-color: #B0D9B1;
+}
+
+.checkmark-auto:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check-auto input:checked ~ .checkmark-auto:after {
+    display: block;
+}
+
+.check-auto .checkmark-auto:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.auto a{
+    margin-left: 30px;
+    font-family: Lato;
+    color: #618264;
+}
