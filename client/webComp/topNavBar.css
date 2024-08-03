@@ -1,0 +1,79 @@
+@font-face {
+  font-family: Sansita;
+  src: url(fonts/Sansita/Sansita-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato;
+  src: url(fonts/Lato/Lato-Regular.ttf);
+}
+
+/* TopNavBar.css */
+.top-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 5px 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+  }
+
+.left-nav-bar {
+  display: flex;
+  justify-content: center;
+  margin: -15px 0 0 40px;
+}
+
+.logoName {
+  font-family: Sansita;
+  font-size: 36px;
+  align-items: center;
+}
+
+.top-nav-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.top-nav-bar ul {
+  display: flex;
+  list-style: none;
+  margin-left: 100px;
+}
+
+.top-nav-bar li {
+  margin: 0 160px 0 0;
+  font-family: Lato;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.top-nav-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+.right-nav-bar {
+  display: flex;
+  justify-content: center;
+  margin: 0 40px 0 0;
+}
+
+.login-button {
+  padding: 10px 40px;
+  background-color: #79AC78;
+  border-radius: 5px;
+}
+
+.login-button a {
+  font-family: Lato;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
