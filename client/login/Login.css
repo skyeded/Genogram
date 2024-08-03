@@ -1,0 +1,200 @@
+@font-face {
+    font-family: Sansita;
+    src: url(C:\Users\User\Desktop\CS400\client\src\webComp\fonts\Sansita\Sansita-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: Lato;
+    src: url(C:\Users\User\Desktop\CS400\client\src\webComp\fonts\Lato\Lato-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: LatoB;
+    src: url(C:\Users\User\Desktop\CS400\client\src\webComp\fonts\Lato\Lato-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: LatoI;
+    src: url(C:\Users\User\Desktop\CS400\client\src\webComp\fonts\Lato\Lato-Italic.ttf);
+  }
+
+  body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    overflow: hidden
+}
+
+.loginBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin-bottom: -130px;
+}
+
+.loginBody ul {
+    list-style: none;
+}
+
+.loginBody li.outer {
+    text-align: center;
+}
+
+.loginBody li a {
+    font-family: Lato;
+}
+
+.loginBody li.outer:nth-child(1) {
+    font-family: LatoB;
+    font-size: 56px;
+    color: #618264;
+    margin-bottom: 20px;
+}
+
+.loginBody li.outer:nth-child(1) a {
+    letter-spacing: 100px;
+}
+
+.loginBody li.outer:nth-child(2) {
+    font-family: LatoI;
+    font-size: 20px;
+    color: #618264;
+    margin-bottom: 30px;
+}
+
+.loginBody li.outer:nth-child(3) {
+    display: flex;
+    background-color: wheat;
+    margin: 0 40px 30px 40px;
+    padding: 10px 20px;
+} 
+
+.loginBody li.outer:nth-child(3) {
+    background-color: wheat;
+    text-align: left;
+    margin: 0 40px 30px 40px;
+    padding: 10px 20px;
+    background-color: #618264;
+    border-radius: 10px;
+    color: white;
+}
+
+ ::placeholder {
+    text-align: center;
+    font-family: Lato;
+    font-size: 10px;
+    color: white;
+  }
+
+.loginBody li.outer:nth-child(4) {
+    background-color: wheat;
+    text-align: left;
+    margin: 0 40px 30px 40px;
+    padding: 10px 20px;
+    background-color: #618264;
+    border-radius: 10px;
+    color: white;
+}
+
+.loginBody li.outer:nth-child(6) div {
+    text-align: center;
+    margin: 0 40px 0px 40px;
+    padding: 10px 20px;
+    background-color: #B0D9B1;
+    border-radius: 10px;
+
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+
+.login {
+    text-decoration: none;
+    font-family: LatoB;
+    font-size: 18px;
+    color: #618264;
+}
+
+.forgot {
+    margin-bottom: 30px;
+}
+
+.forgot ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot li.forgot-item {
+    color: #618264;
+}
+
+.check {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .check input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #618264;
+    border-radius: 5px;
+  }
+
+.check:hover input ~ .checkmark{
+    background-color: #B0D9B1;
+}
+
+.check input:checked ~ .checkmark {
+    background-color: #B0D9B1;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.check input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.check .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.forgot li.forgot-item:nth-child(2) {
+    margin-left: -60px;
+    font-family: Lato;
+}
+
+.forgot li.forgot-item:nth-child(3) {
+    font-family: LatoB;
+    margin-right: 35px;
+}
