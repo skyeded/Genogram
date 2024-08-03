@@ -1,0 +1,26 @@
+.div {
+    display: flex;
+}
+
+.homeicon {
+    margin-bottom: 10%;
+}
+
+.searchHistory {
+    display: flex;
+    justify-content: center;
+}
+.historylabel {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.historylabel a {
+    font-family: Sansita;
+    font-size: 32px;
+}
+
+.historytable {
+    margin: 0 100px 0 100px;
+}
